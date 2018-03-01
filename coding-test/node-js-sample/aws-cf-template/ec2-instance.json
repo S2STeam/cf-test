@@ -1,0 +1,62 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters": {
+        "KeyPair": {
+            "Description": "The EC2 key pair to allow SSH Access to the instance",
+            "Type": "String"
+        }
+    },
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "bc4192b2-88b0-4067-a1f1-17ad07fad849": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 459,
+                    "y": 140
+                },
+                "z": 0,
+                "embeds": []
+            }
+        }
+    },
+    "Resources": {
+        "Ec2Instance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                 "ImageId": "ami-223f945a",
+                "InstanceType": "t2.micro",
+                "SecurityGroups" : ["ssh-linux"],
+                "KeyName": {
+                    "Ref": "KeyPair"
+                },
+                "Tags":[{
+                    "Key": "Name","Value":"cf-test1"
+                }]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "bc4192b2-88b0-4067-a1f1-17ad07fad849"
+                }
+            }
+        }
+        },
+            "Outputs": {
+                "InstanceId": {
+                    "Description": "InstanceId of the newly created EC2 Instance",
+                    "Value": {
+                        "Ref": "Ec2Instance"
+                    }
+                },
+                "PrivateIp": {
+                    "Description": "Private Ip address of the instance",
+                    "Value": {
+                        "Fn::GetAtt" : [ "Ec2Instance" , "PrivateIp" ]
+                    }
+                }
+            }
+        }
+    
+

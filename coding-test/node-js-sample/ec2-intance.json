@@ -1,0 +1,129 @@
+{
+    "Reservations": [
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-52-26-111-207.us-west-2.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-02-28T21:54:41.000Z", 
+                    "PublicIpAddress": "52.26.111.207", 
+                    "PrivateIpAddress": "172.31.23.51", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-f0fd3296", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0f70b3d18c4c3aed5", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-223f945a", 
+                    "PrivateDnsName": "ip-172-31-23-51.us-west-2.compute.internal", 
+                    "KeyName": "develop-pair", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "ssh-linux", 
+                            "GroupId": "sg-1db5cf62"
+                        }
+                    ], 
+                    "ClientToken": "node-Ec2In-1W4YZOV90XDOB", 
+                    "SubnetId": "subnet-d6b4adb1", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:1d:57:3c:d3:0a", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-f0fd3296", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-9766e2b3", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-23-51.us-west-2.compute.internal", 
+                                    "PrivateIpAddress": "172.31.23.51", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "52.26.111.207", 
+                                        "PublicDnsName": "ec2-52-26-111-207.us-west-2.compute.amazonaws.com", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-23-51.us-west-2.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-2dc96453", 
+                                "AttachTime": "2018-02-28T21:54:41.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "ssh-linux", 
+                                    "GroupId": "sg-1db5cf62"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "509392689201", 
+                            "PrivateIpAddress": "172.31.23.51", 
+                            "SubnetId": "subnet-d6b4adb1", 
+                            "Association": {
+                                "PublicIp": "52.26.111.207", 
+                                "PublicDnsName": "ec2-52-26-111-207.us-west-2.compute.amazonaws.com", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0fe354f2ee7a79c04", 
+                                "AttachTime": "2018-02-28T21:54:42.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "cf-test1", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "node-test1", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "Ec2Instance", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "arn:aws:cloudformation:us-west-2:509392689201:stack/node-test1/f7dd2cd0-1cd1-11e8-8094-50a68af39629", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-03c1fd008a8c4e4ca", 
+            "RequesterId": "658754138699", 
+            "Groups": [], 
+            "OwnerId": "509392689201"
+        }
+    ]
+}
